@@ -631,7 +631,7 @@ hr.double {
 figure.rounded span.bg,
 figure.rounded img,
 .rounded.overlay-info figcaption {
-    border-radius: 5px !important;
+    border-radius: 110px !important;
 }
 
 .full-rounded {
