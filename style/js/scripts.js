@@ -1,5 +1,8 @@
 $(document).ready(function() {
     'use strict';
+    window.addEventListener('load', function() {
+        document.getElementById('preloader').style.display = 'none';
+      });
     /*-----------------------------------------------------------------------------------*/
     /*	STICKY HEADER
     /*-----------------------------------------------------------------------------------*/

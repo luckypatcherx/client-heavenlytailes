@@ -7446,3 +7446,76 @@ footer.inverse-text p {
                         text-transform: uppercase;
                     }
                     /*new section end */
+
+            /* extra css */
+                       
+                        @media (max-width: 650px) {
+                            .containerx {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                padding-right: 15px;
+                                padding-left: 15px;
+                                margin-right: 30px;
+                                margin-left: 30px;
+                                height: 100%;
+                              }
+                            .headings.text_left .title {
+                              max-width: 100%;
+                              color: #ffffff;
+                              font-family: "Playfair Display", sans-serif;
+                              font-size: 15px;
+                              letter-spacing: 1.3px;
+                              
+                             
+                            }
+                            
+                            .a-btn-4 {
+                                display: inline-block;
+                                padding: 10px 30px;
+                                border: 1px solid;
+                                font-size: 12px;
+                                font-weight: 600;
+                                line-height: 2;
+                                letter-spacing: 2px;
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                
+                                
+                              }
+                              .rowx {
+                                margin-right: 0;
+                                margin-left:0;
+                              }
+                          }
+                          
+                      
+/*Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 9999;
+  }
+  
+  #preloader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    height: auto;
+    transform: translate(-50%, -50%);
+  }
+  #preloader p {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+  }
