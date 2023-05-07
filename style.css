@@ -7522,3 +7522,12 @@ footer.inverse-text p {
     font-size: 14px;
     font-weight: bold;
   }
+
+  /*height override */
+  @media screen and (min-width: 1200px) {
+    /* Styles for devices with a minimum width of 1200px */
+    .height_max {
+    
+      height: 600px;
+    }
+  }
