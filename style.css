@@ -7509,7 +7509,7 @@ footer.inverse-text p {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 25%;
+    width: 10%;
     height: auto;
     transform: translate(-50%, -50%);
   }
