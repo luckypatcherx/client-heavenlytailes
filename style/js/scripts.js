@@ -1378,7 +1378,7 @@ $(document).ready(function() {
         loadMoreAction: 'click',
         layoutMode: 'grid',
         mediaQueries: [{width: 1440, cols: 2}, {width: 1024, cols: 2}, {width: 768, cols: 2}, {width: 575, cols: 2}, {width: 320, cols: 1}],
-        defaultFilter: '*',
+        defaultFilter: '.cat1',
         animationType: 'quicksand',
         gapHorizontal: 20,
         gapVertical: 20,
