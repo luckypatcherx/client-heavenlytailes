@@ -70,23 +70,31 @@
   </div>
   <!-- /.wrapper -->
   <div class="wrapper light-wrapper">
-    <div class="container inner">
+    <div class="container inner">   
+      <div id="arnoldtext" style="display: block;"><center><p>Dive into the magical world of Arnold & Anjali, where love dances in every frame. Let their captivating wedding photos ignite your imagination and reveal the beauty of their eternal bond. Experience the essence of their extraordinary journey through a gallery that will leave you breathless.</p></center></div>
+      <div id="kessiatext" style="display: none;"><center><p>Step into a realm of love and enchantment with Chippy & Tony. Join us as we unveil their mesmerizing wedding photos, capturing the essence of their extraordinary day. Immerse yourself in a gallery filled with cherished memories, laughter, and the purest celebration of their eternal love.</p></center></div>
+      <div id="tonytext" style="display: none;"><center><p>Indulge in the romantic tale of Kessia & Merit, set against the stunning backdrop of Dubai. Experience the magic as we unveil their captivating prewedding photos, where every frame whispers a love story. Explore a gallery that will transport you to a world of breathtaking moments and endless dreams</p></center></div>
+
       <div id="cube-grid-large-filter" class="cbp-filter-container text-center">
+        
        
-        <div data-filter=".cat1" class="cbp-filter-item">Arnold & Anjali</div>
-        <div data-filter=".cat2" class="cbp-filter-item">Kessia & Merit</div>
-        <div data-filter=".cat3" class="cbp-filter-item">Tony & Chippy</div>
+        <div id="arnold" data-filter=".cat1" class="cbp-filter-item">Arnold & Anjali</div>
+        <div id="kessia" data-filter=".cat2" class="cbp-filter-item">Kessia & Merit</div>
+        <div id="tony" data-filter=".cat3" class="cbp-filter-item">Tony & Chippy</div>
         
       </div>
       <div class="clearfix"></div>
-      <div class="space20"></div>
-      <div id="cube-grid-large" class="cbp light-gallery">
+      <div class="space20"></div>      
+      
+      <div id="cube-grid-large" class="cbp light-gallery">        
 
         <!-- cat1 start -->
+        
         <div class="cbp-item cat1">
           <figure class="overlay overlay2"><a href="style/Clients/Arnold/p16-full.jpg"><img src="style/Clients/Arnold/p16.jpg" alt="" /></a></figure>
         </div>
         <!--/.cbp-item -->
+        
         <div class="cbp-item cat1">
           <figure class="overlay overlay2"><a href="style/Clients/Arnold/p17-full.jpg"><img src="style/Clients/Arnold/p17.jpg" alt="" /></a></figure>
         </div>
@@ -361,6 +369,31 @@
   </footer>
 </div>
 <!-- /.content-wrapper --> 
+
+<script>
+
+var arnoldshow = document.getElementById("arnold");
+var kessiashow = document.getElementById("kessia");
+var tonyshow = document.getElementById("tony");
+var arnoldid = document.getElementById("arnoldtext");
+var kessiaid = document.getElementById("kessiatext");
+var tonyid = document.getElementById("tonytext");
+arnoldshow.addEventListener("click", function() {
+  kessiaid.style.display = "none"
+  tonyid.style.display = "none"
+  arnoldid.style.display = "block";
+});
+kessiashow.addEventListener("click", function() {
+  arnoldid.style.display = "none"
+  tonyid.style.display = "none"
+  kessiaid.style.display = "block";
+});
+tonyshow.addEventListener("click", function() {
+  kessiaid.style.display = "none"
+  arnoldid.style.display = "none"
+  tonyid.style.display = "block";
+});
+</script>
 <script src="style/js/jquery.min.js"></script> 
 <script src="style/js/popper.min.js"></script> 
 <script src="style/js/bootstrap.min.js"></script> 
