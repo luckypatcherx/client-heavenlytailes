@@ -7531,3 +7531,27 @@ footer.inverse-text p {
       height: 600px;
     }
   }
+
+  /*custom css */
+  /* CSS for desktop and larger devices */
+.elementx {
+    display: none!important;
+  }
+  
+  /* CSS for mobile devices */
+  @media (max-width: 767px) {
+    .elementx {
+      display: block!important;
+    }
+  }
+ 
+  
+  .desktop-only {
+    display: none!important;
+  }
+  
+  @media (min-width: 768px) {
+    .desktop-only {
+      display: block!important;
+    }
+  }
